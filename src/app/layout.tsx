@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='nl'>
+    <html lang='nl' suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-full min-h-screen flex flex-col`}>
         <SidebarProvider defaultOpen={false}>

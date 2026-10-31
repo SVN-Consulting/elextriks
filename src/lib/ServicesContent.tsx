@@ -7,6 +7,8 @@ import Laadpalen from '/public/images/laadpalen.jpg';
 import Depanage from '/public/images/depanage.jpg';
 import TechnicalDrawing from '/public/images/technische-tekening.jpg';
 import HouseConform from '/public/images/woning-keuringklaar.jpg';
+import GroeneEnergie from '/public/images/groene-energie.jpg';
+import airco from '/public/images/airco.jpg';
 
 export const ServicesContent: ServiceContent[] = [
   {
@@ -78,5 +80,21 @@ export const ServicesContent: ServiceContent[] = [
     title: 'Plaatsen van laadpalen',
     description: ['B2B en B2C', 'Erkende laadpalen (Smappee, Zeptec)'],
     image: <Image src={Laadpalen} alt='Laadpalen' className='object-cover' />,
+  },
+  {
+    title: 'Groene energie',
+    description: ['Zonnepanelen', 'Thuisbatterijen'],
+    image: (
+      <Image
+        src={GroeneEnergie}
+        alt='Groene energie'
+        className='object-cover'
+      />
+    ),
+  },
+  {
+    title: 'Verwarming/koeling',
+    description: ["Airco's", 'Lucht-water warmtepomp'],
+    image: <Image src={airco} alt='Airco' className='object-cover' />,
   },
 ];
